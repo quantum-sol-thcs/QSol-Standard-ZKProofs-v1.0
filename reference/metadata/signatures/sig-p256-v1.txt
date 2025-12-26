@@ -1,1 +1,16 @@
+# QSol-Standard-ZKProofs-v1.0
+# ECDSA P-256 Signature — v1
+# Harmonic Systems Research Division
+# Status: Canonical
+
+Artifact: ZKProofs-v1.0.pdf
+Hash (SHA3-256): <INSERT_SHA3_256_OF_PDF_HERE>
+
+Signature (ECDSA-P256, ASN.1 DER → base64):
+<INSERT_P256_SIGNATURE_B64_HERE>
+
+Public Key (P-256, uncompressed base64):
+<INSERT_P256_PUBLIC_KEY_RAW_B64_HERE>
+
+Timestamp: <INSERT_ISO8601_TIMESTAMP_HERE>
 
