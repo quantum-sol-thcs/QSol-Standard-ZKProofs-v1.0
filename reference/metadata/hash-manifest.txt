@@ -1,1 +1,12 @@
+# QSol-Standard-ZKProofs-v1.0
+# Hash Manifest (Canonical)
+# Harmonic Systems Research Division
+# Status: Normative
+
+Artifact: ZKProofs-v1.0.pdf
+Hash Algorithm: SHA3-256
+
+SHA3-256: <INSERT_SHA3_256_OF_PDF_HERE>
+
+Generated: <INSERT_ISO8601_TIMESTAMP_HERE>
 
