@@ -1,1 +1,14 @@
+{
+  "id": "ak-f1-addition",
+  "kernel": "AK",
+  "operation": "field_add",
+  "input": {
+    "a": "0x01",
+    "b": "0x02"
+  },
+  "expected": {
+    "result": "0x03"
+  },
+  "version": "1.0.0"
+}
 
