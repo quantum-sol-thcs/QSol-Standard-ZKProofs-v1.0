@@ -1,1 +1,261 @@
+%==============================================================================
+% QSol-Standard-ZKProofs-v1.0
+% Canonical LaTeX Master File
+%------------------------------------------------------------------------------
+% This file defines the canonical PDF build for:
+%
+%   QSol-Standard-ZKProofs-v1.0
+%
+% It is the only authoritative LaTeX entry point for the Standard.
+% All institutional publications of this Standard MUST be built from this file.
+%==============================================================================
+
+\documentclass[11pt,oneside]{article}
+
+%------------------------------------------------------------------------------
+% Encoding and Language
+%------------------------------------------------------------------------------
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+%------------------------------------------------------------------------------
+% Geometry, Fonts, and Layout
+%------------------------------------------------------------------------------
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{color}
+\usepackage{tocloft}
+
+%------------------------------------------------------------------------------
+% Hyperref Configuration (Deterministic, Canonical)
+%------------------------------------------------------------------------------
+
+\definecolor{qsolblue}{RGB}{0,60,120}
+\definecolor{qsollink}{RGB}{0,60,140}
+\definecolor{qsolcite}{RGB}{60,60,60}
+
+\hypersetup{
+  pdftitle={QSol-Standard-ZKProofs-v1.0},
+  pdfauthor={QSol LLC -- Harmonic Systems Research Division},
+  pdfsubject={Zero-Knowledge Proofs Standard},
+  pdfkeywords={Zero-Knowledge Proofs, QSol, Standard, ZK, Cryptography},
+  colorlinks=true,
+  linkcolor=qsollink,
+  citecolor=qsolcite,
+  urlcolor=qsollink,
+  pdfcreator={QSol Publication Pipeline},
+  pdfproducer={QSol Publication Pipeline}
+}
+
+%------------------------------------------------------------------------------
+% QSol Macros and Institutional Styling
+%------------------------------------------------------------------------------
+
+\input{macros}
+
+%------------------------------------------------------------------------------
+% Header and Footer (Institutional)
+%------------------------------------------------------------------------------
+
+\pagestyle{fancy}
+\fancyhf{} % clear all
+\fancyhead[L]{\textsc{QSol-Standard-ZKProofs-v1.0}}
+\fancyhead[R]{\textsc{QSol LLC}}
+\fancyfoot[C]{\thepage}
+
+%------------------------------------------------------------------------------
+% Section Formatting
+%------------------------------------------------------------------------------
+
+\titleformat{\section}
+  {\large\bfseries}{\thesection}{0.75em}{}
+\titleformat{\subsection}
+  {\normalsize\bfseries}{\thesubsection}{0.75em}{}
+\titleformat{\subsubsection}
+  {\normalsize\itshape}{\thesubsubsection}{0.75em}{}
+
+\titlespacing*{\section}{0pt}{1.5ex plus 0.5ex minus 0.2ex}{0.75ex}
+\titlespacing*{\subsection}{0pt}{1.25ex plus 0.5ex minus 0.2ex}{0.5ex}
+\titlespacing*{\subsubsection}{0pt}{1ex plus 0.5ex minus 0.2ex}{0.5ex}
+
+%------------------------------------------------------------------------------
+% Table of Contents Formatting
+%------------------------------------------------------------------------------
+
+\setlength{\cftbeforetoctitleskip}{-1.0em}
+\setlength{\cftaftertoctitleskip}{1.0em}
+\renewcommand{\cfttoctitlefont}{\Large\bfseries}
+\renewcommand{\cftsecfont}{\normalsize}
+\renewcommand{\cftsubsecfont}{\normalsize}
+\renewcommand{\cftsecpagefont}{\normalsize}
+\renewcommand{\cftsubsecpagefont}{\normalsize}
+
+%------------------------------------------------------------------------------
+% Document Metadata (Canonical)
+%------------------------------------------------------------------------------
+
+\newcommand{\QSolStandardName}{QSol-Standard-ZKProofs-v1.0}
+\newcommand{\QSolStandardVersion}{v1.0.0}
+\newcommand{\QSolPublisher}{QSol LLC -- Harmonic Systems Research Division}
+\newcommand{\QSolPublicationDate}{\textsc{2025}} % adjust as needed
+\newcommand{\QSolJurisdiction}{United States}
+
+%==============================================================================
+% DOCUMENT
+%==============================================================================
+
+\begin{document}
+
+%------------------------------------------------------------------------------
+% Canonical Cover Page
+%------------------------------------------------------------------------------
+
+\input{cover}
+
+%------------------------------------------------------------------------------
+% Front Matter
+%------------------------------------------------------------------------------
+
+\clearpage
+\pagenumbering{roman}
+
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+
+%------------------------------------------------------------------------------
+% Main Body: Core Standard Sections
+%
+% NOTE:
+%   The canonical Markdown specification (spec/ZKProofs-v1.0.md) is the
+%   normative source. This LaTeX file is obligated to reflect that source
+%   exactly, modulo purely presentational transformations.
+%
+%   The following structure is intentionally left abstract; in your actual
+%   repository, you may \input{} section-specific .tex fragments generated
+%   from the Markdown, or you may embed the content directly here.
+%------------------------------------------------------------------------------
+
+\section{Introduction}
+% The introduction should define scope, motivation, audience, and structure.
+% All content MUST mirror the canonical Markdown specification.
+
+% TODO: Insert or \input{} the Introduction content synchronized with spec/ZKProofs-v1.0.md.
+
+\section{Notation and Conventions}
+% All notation MUST match spec/notation.md and spec/glossary.md.
+
+% TODO: Insert or \input{} notation content.
+
+\section{Algebra Kernel (AK)}
+% This section references and harmonizes with reference/ak-reference/*.
+
+% TODO: Insert or \input{} AK content.
+
+\section{Commitment Kernel (CK)}
+% This section references and harmonizes with reference/ck-reference/*.
+
+% TODO: Insert or \input{} CK content.
+
+\section{Transcript Kernel (SK)}
+% This section references and harmonizes with reference/sk-reference/*.
+
+% TODO: Insert or \input{} SK content.
+
+\section{Profiles}
+% This section references profiles/*.md and describes:
+%   - plonkish-381-kzg
+%   - ipa-pedersen
+%   - nova-recursive-ipa
+%   - stark-fri-poseidon
+%   - profile-template
+
+% TODO: Insert or \input{} profiles overview and mapping.
+
+\section{Conformance and CTS}
+% This section connects to the Kernel Compliance Annex and Test Vector Suite.
+
+% TODO: Insert or \input{} conformance content.
+
+\section{Security Considerations}
+% Global security assumptions and profile-specific notes.
+
+% TODO: Insert or \input{} security content.
+
+\section{Governance and Versioning}
+% This section MUST define:
+%   - versioning policy (MAJOR/MINOR/PATCH)
+%   - governance roles
+%   - amendment rules
+%   - publication pipeline
+
+% TODO: Insert or \input{} governance content.
+
+%------------------------------------------------------------------------------
+% Annexes (Canonical End Matter)
+%------------------------------------------------------------------------------
+
+\clearpage
+\appendix
+\input{annexes}
+
+%------------------------------------------------------------------------------
+% Canonical Closure Page (Optional)
+%
+% If desired, you may add a final page that restates:
+%   - the Standard name
+%   - version
+%   - publication authority
+%   - a small institutional note.
+%
+% This may also visually anchor the canonical seal.
+%------------------------------------------------------------------------------
+
+% \clearpage
+% \thispagestyle{empty}
+% \begin{center}
+%   {\Large \textbf{\QSolStandardName}}\
+
+\[0.5em]
+%   {\large Version \QSolStandardVersion}\
+
+\[1.5em]
+%   {\QSolPublisher}\
+
+\[0.5em]
+%   \QSolPublicationDate\
+
+\[2em]
+%   \vfill
+%   \includegraphics[height=2.5cm]{../assets/canonical-seal.svg}\
+
+\[1em]
+%   {\small This page marks canonical closure of the QSol-Standard-ZKProofs-v1.0
+%   publication build.}
+% \end{center}
+
+%==============================================================================
+% END OF DOCUMENT
+%==============================================================================
+
+\end{document}
 
