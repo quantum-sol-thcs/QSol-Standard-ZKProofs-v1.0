@@ -1,1 +1,14 @@
+{
+  "id": "ak-f3-inversion",
+  "kernel": "AK",
+  "operation": "field_inv",
+  "input": {
+    "a": "0x07"
+  },
+  "expected": {
+    "result": "0x2492492492492492492492492492492492492492492492492492492492492493"
+  },
+  "notes": "Multiplicative inverse in the canonical field modulus.",
+  "version": "1.0.0"
+}
 
