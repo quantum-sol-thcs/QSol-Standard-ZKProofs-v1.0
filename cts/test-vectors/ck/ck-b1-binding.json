@@ -1,1 +1,15 @@
+{
+  "id": "ck-b1-binding",
+  "kernel": "CK",
+  "operation": "commit_binding_check",
+  "input": {
+    "poly_a": ["0x01", "0x02"],
+    "poly_b": ["0x02", "0x01"]
+  },
+  "expected": {
+    "same_commitment": false
+  },
+  "notes": "Binding test: two different polynomials MUST NOT produce the same commitment.",
+  "version": "1.0.0"
+}
 
