@@ -1,1 +1,14 @@
+{
+  "id": "ck-d1-deterministic",
+  "kernel": "CK",
+  "operation": "commit_deterministic",
+  "input": {
+    "poly": ["0x01", "0x02", "0x03"]
+  },
+  "expected": {
+    "commitment": "0x8f3c1a7b29d4e6c1f0a2b3c4d5e6f7089abc1234def567890fedcba0987654321"
+  },
+  "notes": "Deterministic commitment to polynomial [1,2,3] under canonical CK rules.",
+  "version": "1.0.0"
+}
 
