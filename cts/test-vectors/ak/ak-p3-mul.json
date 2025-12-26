@@ -1,1 +1,14 @@
+{
+  "id": "ak-p3-mul",
+  "kernel": "AK",
+  "operation": "poly_mul",
+  "input": {
+    "poly_a": ["0x01", "0x02"],
+    "poly_b": ["0x03", "0x04"]
+  },
+  "expected": {
+    "result": ["0x03", "0x0a", "0x08"]
+  },
+  "version": "1.0.0"
+}
 
