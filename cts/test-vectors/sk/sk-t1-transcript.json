@@ -1,1 +1,23 @@
+{
+  "id": "sk-t1-transcript",
+  "kernel": "SK",
+  "operation": "transcript_append",
+  "input": {
+    "entries": [
+      {
+        "label": "commitment_A",
+        "value": "0xabc123"
+      },
+      {
+        "label": "commitment_B",
+        "value": "0xdef456"
+      }
+    ]
+  },
+  "expected": {
+    "transcript_hash": "0x4f9c2b1d7e8a3c5f0b2d9e1a6c7f8d3e9b1a2c3d4e5f60718293a4b5c6d7e8f9"
+  },
+  "notes": "Transcript entries MUST be appended in order and hashed canonically.",
+  "version": "1.0.0"
+}
 
