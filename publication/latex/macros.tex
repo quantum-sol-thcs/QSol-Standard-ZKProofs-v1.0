@@ -1,1 +1,119 @@
+%==============================================================================
+% QSol-Standard-ZKProofs-v1.0
+% Canonical Macros and Institutional Styling
+%------------------------------------------------------------------------------
+% This file defines all macros, theorem environments, and notation used
+% throughout the Standard. It MUST be included via \input{macros} in main.tex.
+%==============================================================================
+
+%------------------------------------------------------------------------------
+% Theorem Environments (Deterministic, QSol-Style)
+%------------------------------------------------------------------------------
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+
+\theoremstyle{plain}
+\newtheorem{proposition}{Proposition}[section]
+
+\theoremstyle{plain}
+\newtheorem{corollary}{Corollary}[section]
+
+%------------------------------------------------------------------------------
+% QSol Institutional Math Macros
+%------------------------------------------------------------------------------
+
+% Sets and fields
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\R}{\mathbb{R}}
+
+% Groups
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\Hh}{\mathbb{H}}
+
+% Vectors and matrices
+\newcommand{\vecx}{\mathbf{x}}
+\newcommand{\vecy}{\mathbf{y}}
+\newcommand{\vecz}{\mathbf{z}}
+\newcommand{\matA}{\mathbf{A}}
+\newcommand{\matB}{\mathbf{B}}
+
+% Cryptographic primitives
+\newcommand{\Commit}{\mathsf{Commit}}
+\newcommand{\Prove}{\mathsf{Prove}}
+\newcommand{\Verify}{\mathsf{Verify}}
+\newcommand{\Transcript}{\mathsf{Transcript}}
+
+% Kernels (AK, CK, SK)
+\newcommand{\AK}{\mathsf{AK}}
+\newcommand{\CK}{\mathsf{CK}}
+\newcommand{\SK}{\mathsf{SK}}
+
+% Profiles
+\newcommand{\Profile}{\mathsf{Profile}}
+
+%------------------------------------------------------------------------------
+% Operators and Formatting Helpers
+%------------------------------------------------------------------------------
+
+\DeclareMathOperator{\poly}{poly}
+\DeclareMathOperator{\negl}{negl}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Span}{span}
+
+% Norms
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+
+% Inner product
+\newcommand{\inner}[2]{\left\langle #1,\, #2 \right\rangle}
+
+% Brackets
+\newcommand{\braces}[1]{\left\{ #1 \right\}}
+\newcommand{\brackets}[1]{\left[ #1 \right]}
+\newcommand{\parens}[1]{\left( #1 \right)}
+
+%------------------------------------------------------------------------------
+% QSol Institutional Formatting
+%------------------------------------------------------------------------------
+
+% Inline code / identifiers
+\newcommand{\code}[1]{\texttt{#1}}
+
+% Emphasized institutional terms
+\newcommand{\term}[1]{\textbf{\textsc{#1}}}
+
+% Canonical reference to the Standard
+\newcommand{\QSolStandard}{\textbf{QSol-Standard-ZKProofs-v1.0}}
+
+%------------------------------------------------------------------------------
+% Environment Shortcuts
+%------------------------------------------------------------------------------
+
+\newenvironment{qsolbox}
+{
+  \begin{center}
+  \begin{minipage}{0.92\linewidth}
+  \hrule\vspace{0.75em}
+}
+{
+  \vspace{0.75em}\hrule
+  \end{minipage}
+  \end{center}
+}
+
+%------------------------------------------------------------------------------
+% End of Macros
+%==============================================================================
+
 
