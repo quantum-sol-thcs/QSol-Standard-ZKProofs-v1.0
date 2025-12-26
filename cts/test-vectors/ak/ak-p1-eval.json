@@ -1,1 +1,14 @@
+{
+  "id": "ak-p1-eval",
+  "kernel": "AK",
+  "operation": "poly_eval",
+  "input": {
+    "poly": ["0x01", "0x02", "0x03"],
+    "x": "0x05"
+  },
+  "expected": {
+    "result": "0x3c"
+  },
+  "version": "1.0.0"
+}
 
