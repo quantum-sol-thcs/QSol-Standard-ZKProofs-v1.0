@@ -1,1 +1,14 @@
+{
+  "id": "ak-f2-multiplication",
+  "kernel": "AK",
+  "operation": "field_mul",
+  "input": {
+    "a": "0x03",
+    "b": "0x05"
+  },
+  "expected": {
+    "result": "0x0f"
+  },
+  "version": "1.0.0"
+}
 
