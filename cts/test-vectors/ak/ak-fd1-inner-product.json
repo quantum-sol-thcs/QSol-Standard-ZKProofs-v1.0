@@ -1,1 +1,14 @@
+{
+  "id": "ak-fd1-inner-product",
+  "kernel": "AK",
+  "operation": "inner_product",
+  "input": {
+    "vector_a": ["0x01", "0x02", "0x03"],
+    "vector_b": ["0x04", "0x05", "0x06"]
+  },
+  "expected": {
+    "result": "0x32"
+  },
+  "version": "1.0.0"
+}
 
