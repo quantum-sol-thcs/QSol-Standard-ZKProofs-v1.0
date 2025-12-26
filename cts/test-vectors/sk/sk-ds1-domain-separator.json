@@ -1,1 +1,15 @@
+{
+  "id": "sk-ds1-domain-separator",
+  "kernel": "SK",
+  "operation": "apply_domain_separator",
+  "input": {
+    "domain": "CK_COMMIT_PHASE",
+    "transcript_state": "0x11223344556677889900aabbccddeeff"
+  },
+  "expected": {
+    "new_state": "0x9a8b7c6d5e4f3021ffeeddccbbaa0099887766554433221100ffeeddccbbaa99"
+  },
+  "notes": "Domain separators MUST be applied before any transcript‑affecting operation.",
+  "version": "1.0.0"
+}
 
