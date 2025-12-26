@@ -1,1 +1,20 @@
+{
+  "id": "ck-o1-opening",
+  "kernel": "CK",
+  "operation": "open_and_verify",
+  "input": {
+    "poly": ["0x03", "0x04"],
+    "point": "0x05"
+  },
+  "expected": {
+    "commitment": "0x7ab4c9d2f1e0a3b5c6d7e8f90123456789abcdef0123456789abcdef01234567",
+    "opening": {
+      "value": "0x23",
+      "proof": "0xdeadbeefcafebabefeedface1234567890abcdefabcdef1234567890abcdef"
+    },
+    "verified": true
+  },
+  "notes": "Opening and verification MUST be deterministic and canonical.",
+  "version": "1.0.0"
+}
 
